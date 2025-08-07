@@ -7,7 +7,7 @@ A simple countdown timer that displays the number of days remaining until a spec
 Customize the timer by adding these parameters to the URL:
 
 - `date`: **Required**  
-  The target date in `YYYYMMDD` format (e.g., `20231225` for December 25, 2023)
+  The target date in `YYYYMMDD` format (e.g., `20260606` for June 6, 2026)
 
 - `theme`: *Optional*  
   - `dark`: Dark theme with light text  
@@ -19,15 +19,20 @@ Customize the timer by adding these parameters to the URL:
 
 ## Examples
 
-- Basic countdown:  
-  `?date=20231225`
+### Basic countdown
+https://abssdghi.github.io/SimpleCountdown/?date=20260606
 
-- Dark theme with border:  
-  `?date=20231225&theme=dark&border=on`
+### Dark theme withou border
+https://abssdghi.github.io/SimpleCountdown/?date=20260606&theme=dark
 
-- Light theme without border:  
-  `?date=20231225&theme=light`  
-  (or just `?date=20231225`)
+### Dark theme with border
+https://abssdghi.github.io/SimpleCountdown/?date=20260606&theme=dark&border=on
+
+### Light theme with border
+https://abssdghi.github.io/SimpleCountdown/?date=20260606&border=on
+
+### Error Case (invalid date)
+https://abssdghi.github.io/SimpleCountdown/?date=invalid
 
 ## Error Handling
 
