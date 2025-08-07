@@ -8,9 +8,15 @@ if (theme == "dark") {
     document.getElementById('countdown').style.color = '#f0f0f0';
     if (border == "on") {
         document.getElementById('countdown').style.border = "#f0f0f0 solid 4px";
+    } else {
+        document.getElementById('countdown').style.border = "none";
     }
 } else {
-    document.getElementById('countdown').style.border = "black solid 4px";
+    if (border == "on") {
+        document.getElementById('countdown').style.border = "black solid 4px";
+    } else {
+        document.getElementById('countdown').style.border = "none";
+    }
 }
 
 if (!dateStr || dateStr.length !== 8) {
